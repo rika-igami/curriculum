@@ -17,29 +17,24 @@ public class Check {
 	/* 課題③
 	【Check.java】にてPetクラスとRobotPetクラスをインスタンス化して、下記の完成イメージを出力させなさい。 */
 	
-	private String firstName = "伊上";
-	private String lastName = "利加";
+	private static String firstName = "伊上";
+	private static String lastName = "利加";
 		
 	public static void main(String[] args) {
 		
-		Check check = new Check();
+//		Check check = new Check();
 
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 		RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
+		printName(firstName, lastName);
 		
-		System.out.print("printNameメソッド → ");
-		check.printName(check.firstName, check.lastName);
-		
-		System.out.println("■僕の名前は" + pet.getName() + "です");
-		System.out.println("■ご主人様は" + pet.getMasterName() + "です");
-		
-		System.out.println("◇私はロボット。" + robotPet.getName() + "。");
-		System.out.println("◇ご主人さまは" + robotPet.getMasterName() + "。");
+		pet.introduce();
+		robotPet.introduce();
 	
 	}
 	
-	private void printName(String firstName, String lastName) {
-		System.out.println(firstName + lastName);
+	private static void printName(String firstName, String lastName) {
+		System.out.println("printNameメソッド → " + firstName + lastName);
 	}
 
 }
