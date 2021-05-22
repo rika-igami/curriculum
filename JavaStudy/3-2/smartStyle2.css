@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+
+  #page {
+    width: 300px;
+  }
+
+  .section .section-left {
+    width: 100px;
+  }
+
+  .section-content-left1,
+  .section-content-left2 {
+    width: 125px;
+  }
+
+  .section-content-right {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  #page {
+    width: 150px;
+  }
+
+  .section .section-left,
+  .section-content-left1,
+  .section-content-left2,
+  .section-content-right {
+    width: 100%;
+  }
+
+
+  .section .section-left,
+  .section .section-right,
+  .section-right .section-group-up .section-content-left,
+  .section-content-right {
+    float: unset;
+  }
+
+}
