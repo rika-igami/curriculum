@@ -1,0 +1,48 @@
+@media screen and (max-width: 479px) {
+
+  #page {
+    width: 200px;
+  }
+
+  .header {
+    height: 200px;
+  }
+
+  .header-nav-group {
+    right: 70px;
+  }
+
+  .header-nav-list {
+    float: unset;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .header-nav-list:first-child {
+    margin-top: 0;
+  }
+
+  .section {
+    flex-wrap: wrap;
+  }
+
+  .section .section-left,
+  .section .section-right {
+    width: 100%;
+  }
+
+  .section .section-left {
+    height: 100px;
+  }
+
+  .section .section-right {
+    height: auto;
+    padding: 20px 30px 20px 30px;
+  }
+
+  .section .section-right li.section-right-list {
+    width: 140px;
+    height: 40px;
+  }
+
+}

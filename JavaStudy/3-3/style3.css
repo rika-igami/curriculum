@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+#page {
+  width: 400px;
+}
+
+.header,
+.footer {
+  width: 100%;
+  height: 100px;
+}
+
+.header {
+  background-color: #141f40;
+  position: relative;
+}
+
+.footer {
+  background-color: #d98d30;
+}
+
+.header-nav-group {
+  position: absolute;
+  top: 20;
+  right: 20;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.header-nav-list {
+  width: 40px;
+  height: 40px;
+  background-color: #a9004b;
+  margin-left: 10px;
+  float: left;
+}
+
+.header-nav-list:first-child {
+  margin-left: 0;
+}
+
+.section {
+  display: flex;
+}
+
+.section .section-left,
+.section .section-right {
+  height: 250px;
+}
+
+.section .section-left {
+  width: 150px;
+  background-color: #80bfa8;
+}
+
+.section .section-right {
+  width: 250px;
+  padding: 40px 60px 40px 40px;
+  background-color: #8c2727;
+}
+
+.section .section-right ul.section-right-group {
+  width: 150px;
+}
+
+.section .section-right li.section-right-list {
+  width: 150px;
+  height: 50px;
+  background-color: #ff863f;
+  border: 5px solid #fff;
+  margin-top: 10px;
+}
+
+.section .section-right li.section-right-list:first-child {
+  margin-top: 0;
+}
