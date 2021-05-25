@@ -16,6 +16,10 @@
   .section-content-right {
     width: 75px;
   }
+
+  .section-group-down {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -31,12 +35,21 @@
     width: 100%;
   }
 
+  .section .section-left,
+  .section-content-right {
+    height: 100px;
+  }
+
 
   .section .section-left,
   .section .section-right,
   .section-right .section-group-up .section-content-left,
   .section-content-right {
     float: unset;
+  }
+
+  .section-group-down {
+    width: 100%;
   }
 
 }
