@@ -1,8 +1,11 @@
 package study;
 
+import java.text.DateFormatSymbols;
+import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  *
@@ -39,13 +42,17 @@ public class Study {
         // - この課題に関しては課題実施日によって結果が異なりますので、Wiki課題の画像とは結果が異なります。
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
         calendar.add(Calendar.YEAR, 1);
-        calendar.add(Calendar.MONTH, 2 + 1);
+        calendar.add(Calendar.MONTH, 2);
         calendar.add(Calendar.DATE, 15);
 
         System.out.println(calendar.get(Calendar.YEAR));
-        System.out.println(calendar.get(Calendar.MONTH));
+        System.out.println(calendar.get(Calendar.MONTH) + 1);
+//        System.out.println(calendar.get(Calendar.SHORT_STANDALONE));
         System.out.println(calendar.get(Calendar.DATE));
 
+        
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMM", new DateFormatSymbols(Locale.US));
+        System.out.println(sdf.format(calendar.getTime()));
 
         // うるう年判定
         printLeapYear(calendar.get(Calendar.YEAR));

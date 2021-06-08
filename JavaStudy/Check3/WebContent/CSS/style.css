@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div.header,
+div.footer {
+	background-color: gray;
+}
+
+div.header {
+	display: flex;
+	align-items: center;
+}
+
+div.header > label,
+div.footer > label {
+	padding: 10px;
+}
+
+div.header > label:first-child,
+div.footer > label {
+	display: inline-block;
+	color: white;
+}
+
+div.header > label:last-child {
+	font-size: 10px;
+}
+
+/*jspTest*/
+div.main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div.main > table {
+	border-collapse: collapse;
+}
+
+div.main > table > tr {
+	display: block;
+	margin-bottom: 5px;
+}
+
+div.main > table th {
+	padding: 5px;	
+}
+
+div.main > table td.input-box {
+	width: 150px;
+	border: 2px solid gray;
+	padding: 5px;
+}
